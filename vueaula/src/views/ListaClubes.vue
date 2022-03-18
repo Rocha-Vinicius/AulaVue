@@ -2,10 +2,10 @@
   <v-container>
     <h2 class="text-h5 text-center mb-3 mt-5">Classificação</h2>
 
-    <v-simple-table dense>
+    <v-simple-table>
       <template v-slot:default>
         <thead>
-          <tr>
+          <tr class="bgTable" colspan="3">
             <th class="text-center">Classificação</th>
             <th class="text-center">Clubes</th>
             <th class="text-center">Pontos</th>
@@ -17,11 +17,13 @@
             <td class="text-center">{{ index + 1 }}</td>
             <td>
               <v-avatar size="24">
-                <img :src="clube.escudo" :alt="clube.nome" />
-                <span class="pl-3">{{ clube.nome }}</span>
+                <img 
+                :src="clube.escudo" 
+                :alt="clube.nome" />
               </v-avatar>
+              <span>{{ clube.nome }}</span>
             </td>
-            <td>{{ clube.pontos }}</td>
+            <td class="text-center">{{ clube.pontos }}</td>
           </tr>
         </tbody>
       </template>
@@ -57,4 +59,7 @@ export default {
 </script>
 
 <style scoped>
+.bgTable{
+    background-image: linear-gradient(to right, #02c4b0, #12a099c2);
+}
 </style>

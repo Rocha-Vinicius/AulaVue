@@ -3,6 +3,9 @@ import VueRouter from 'vue-router'
 import ListaClubes from '../views/ListaClubes.vue'
 import MeuInicio from '../views/MeuInicio.vue'
 import SobreProjeto from '../views/SobreProjeto.vue'
+import TelaLogin from '../views/TelaLogin.vue'
+import CadastroUsuario from '../views/CadastroUsuario.vue'
+import AnaliseCadastro from '../views/AnaliseCadastro.vue'
 
 Vue.use(VueRouter)
 
@@ -22,6 +25,22 @@ const routes = [
     name: 'SobreProjeto',
     component: SobreProjeto
   },
+  {
+    path: '/login',
+    name: 'TelaLogin',
+    component: TelaLogin
+  },
+  {
+    path: '/cadastrousuario',
+    name: 'CadastroUsuario',
+    component: CadastroUsuario
+  },
+  {
+    path: '/analisecadastro',
+    name: 'AnaliseCadastro',
+    component: AnaliseCadastro
+  },
+
 
 ]
 
