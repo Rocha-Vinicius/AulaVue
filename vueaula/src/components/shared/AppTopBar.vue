@@ -55,6 +55,13 @@
         </v-btn>
       </router-link>
 
+      <router-link to="/sobre">
+        <v-btn>
+          <span>Sobre</span>
+          <v-icon>mdi-information</v-icon>
+        </v-btn>
+      </router-link>
+
      <!-- <router-link to="/cadastrousuario">
         <v-btn>
           <span>Cadastro</span>
