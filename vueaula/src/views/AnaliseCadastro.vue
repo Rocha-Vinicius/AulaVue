@@ -2,8 +2,8 @@
     <div>
     
     <h2 class="text-h5 text-center mb-3 mt-5">OBRIGADA! </h2>
-    <img src="../../Goal.gif" alt=""/>
-    <p> Agora, o seu cadastro está em análise, falta pouco para fazer parte disso, você receberá as instruções por email</p>
+    <img src="../assets/Goal.gif" alt=""/>
+    <h3> Agora, o seu cadastro está em análise, falta pouco para fazer parte disso, você receberá as instruções por email</h3>
     </div>
 </template>
 <script>

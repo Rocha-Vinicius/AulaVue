@@ -31,20 +31,9 @@
     </v-form>  
     
       <div class="botoes">
-                        <router-link to="/analisecadastro"  >
-                        <v-btn @click="router.push('/analisecadastro')"
-                            class="botaoCadastrar"
-                            color="green"
-                            elevation="2"
-                            medium
-                            outlined
-                            rounded
-                        >
-                            Cadastrar
-                        </v-btn>
                         <v-btn
                             class="botaoLimpar"
-                            color="green"
+                            color="teal lighten-1"
                             elevation="2"
                             medium
                             outlined
@@ -52,8 +41,19 @@
                             @click="limpar"
                         >
                             Limpar
+                        </v-btn> 
+                        <v-btn @click="push"
+                            class="botaoCadastrar"
+                            color="teal lighten-1"
+                            elevation="2"
+                            medium
+                            outlined
+                            rounded
+                            :disabled= "loading"
+                        >
+                            {{ loading ? "LOADING..." : "Cadastrar" }}
                         </v-btn>
-                        </router-link>
+                       
                     </div>   
   </div>
 </template>
@@ -69,11 +69,17 @@ export default {
             email: "",
             endereco: "",
             time:"",
-            checkbox: false
+            checkbox: false,
+            loading:false
         };
     },
     methods: {
-        cadastrar() {
+        push() {
+          this.loading=true
+          setTimeout(()=>{
+          this.$router.push('/analisecadastro')
+          },1000)
+           
 
         },
         limpar() {

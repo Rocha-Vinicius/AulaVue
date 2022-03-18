@@ -6,11 +6,10 @@
       </div>
 
       <v-form class="TelaLogin-box">
-        <v-text-field v-model="TelaLogin_id" label="ID" required> </v-text-field>
+        <v-text-field  label="ID" required> </v-text-field>
 
         <v-text-field
           type="password"
-          v-model="TelaLogin_pass"
           label="Password"
           required
         >
@@ -27,11 +26,11 @@
           rounded
           >Login</v-btn
         >
-        <router-link to="/cadastrousuario">
-          <v-btn color="teal lighten-1" elevation="2" medium outlined rounded
-            >Cadastrar-se</v-btn
+        
+          <v-btn  @click="delay"  color="teal lighten-1" elevation="2" medium outlined rounded
+            > Cadastrar-se</v-btn
           >
-        </router-link>
+        
       </div>
     </div>
   </v-app>
@@ -48,6 +47,12 @@ export default {
     nologin: function () {
     
       alert('Você não tem login conosco, clique em CADASTRAR-SE')
+    },
+    delay(){
+        setTimeout(()=>{
+          this.$router.push('/cadastrousuario')
+          },100)
+
     }
   }
 }
