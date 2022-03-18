@@ -4,6 +4,7 @@ import ListaClubes from '../views/ListaClubes.vue'
 import MeuInicio from '../views/MeuInicio.vue'
 import TelaLogin from '../views/TelaLogin.vue'
 import CadastroUsuario from '../views/CadastroUsuario.vue'
+import AnaliseCadastro from '../views/AnaliseCadastro.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -27,6 +28,12 @@ const routes = [
     name: 'CadastroUsuario',
     component: CadastroUsuario
   },
+  {
+    path: '/analisecadastro',
+    name: 'AnaliseCadastro',
+    component: AnaliseCadastro
+  },
+
 
 ]
 

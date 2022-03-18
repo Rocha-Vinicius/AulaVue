@@ -28,7 +28,7 @@
           >Login</v-btn
         >
         <router-link to="/cadastrousuario">
-          <v-btn @click="routerlink" color="teal lighten-1" elevation="2" medium outlined rounded
+          <v-btn color="teal lighten-1" elevation="2" medium outlined rounded
             >Cadastrar-se</v-btn
           >
         </router-link>
