@@ -1,6 +1,16 @@
 <template>
      <div class="app-bottom-bar">
     <v-app-bar hide-on-scroll app>
+       <template v-slot:img="{ props }">
+        <v-img
+          src="https://a-static.mlcdn.com.br/1500x1500/livro-kit-album-campeonato-brasileiro-2020-capa-dura-12-envelopes/livrariaflordelotussbconline/8a979b2834ad11eba03b4201ac18503f/8eb4f3216edb3b10a8d7bb3f54dbb3af.jpg"
+          scroll-target="#scrolling-techniques-2"
+          fade-img-on-scroll
+          scroll-threshold="500"
+          v-bind="props"
+          gradient="to top right, rgba(55,236,186,.7), rgba(25,32,72,.7)"
+        ></v-img>
+      </template>
       <v-spacer />
       <v-toolbar-title><h3><strong>Brasileirão 2022</strong> ⚽</h3></v-toolbar-title>
       <v-spacer />
@@ -31,7 +41,7 @@
         </v-btn>
       </router-link>
 
-      <router-link to="/pontosdecoleta">
+      <router-link to="/listaclubes">
         <v-btn>
           <span>Classificação</span>
           <v-icon>mdi-soccer</v-icon>

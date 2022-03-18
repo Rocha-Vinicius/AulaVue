@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import ListaClubes from '../views/ListaClubes.vue'
 import MeuInicio from '../views/MeuInicio.vue'
-
+import TelaLogin from '../views/TelaLogin.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -15,6 +15,11 @@ const routes = [
     path: '/listaclubes',
     name: 'ListaClubes',
     component: ListaClubes
+  },
+  {
+    path: '/login',
+    name: 'TelaLogin',
+    component: TelaLogin
   },
 
 ]
