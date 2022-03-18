@@ -2,11 +2,21 @@
   <div id="app">
     <nav>
       <router-link to="/">ListaClubes</router-link> |
-     
+      <AppTopBar/>
     </nav>
     <router-view/>
   </div>
 </template>
+
+<script>
+import AppTopBar from "../src/components/shared/AppTopBar.vue"
+export default {
+  name:"App",
+  components:{
+    AppTopBar
+  }
+};
+</script>
 
 <style lang="scss">
 #app {
