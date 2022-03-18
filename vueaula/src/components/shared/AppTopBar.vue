@@ -51,11 +51,6 @@
 
 <script>
 export default {
-<<<<<<< HEAD
-    name: 'AppTopBar'
-}
-</script>
-=======
   name: "BottomBar",
   data() {
     return {
@@ -83,4 +78,3 @@ export default {
              
     }
 </style>
->>>>>>> ef6c448a93644bd8621f05cb961bb0b67a99a5bc
