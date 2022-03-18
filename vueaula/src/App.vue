@@ -1,4 +1,5 @@
 <template>
+  <v-app>
   <div id="app">
     <nav>
       <router-link to="/">ListaClubes</router-link> |
@@ -6,6 +7,7 @@
     </nav>
     <router-view/>
   </div>
+  </v-app>
 </template>
 
 <script>
