@@ -2,7 +2,7 @@
      <div class="app-bottom-bar">
     <v-app-bar hide-on-scroll app>
       <v-spacer />
-      <v-toolbar-title><h3><strong>Coleta Seletiva</strong> ♻️</h3></v-toolbar-title>
+      <v-toolbar-title><h3><strong>Brasileirão 2022</strong> ⚽</h3></v-toolbar-title>
       <v-spacer />
       <v-tooltip v-if="!$vuetify.theme.dark" bottom>
         <template v-slot:activator="{ on, attrs }">
@@ -33,8 +33,8 @@
 
       <router-link to="/pontosdecoleta">
         <v-btn>
-          <span>Locais</span>
-          <v-icon>mdi-office-building-marker-outline</v-icon>
+          <span>Classificação</span>
+          <v-icon>mdi-soccer</v-icon>
         </v-btn>
       </router-link>
 
