@@ -17,9 +17,11 @@
             <td class="text-center">{{ index + 1 }}</td>
             <td>
               <v-avatar size="24">
-                <img :src="clube.escudo" :alt="clube.nome" />
+                <img 
+                :src="clube.escudo" 
+                :alt="clube.nome" />
               </v-avatar>
-              <span class="pl-3">{{ clube.nome }}</span>
+              <span>{{ clube.nome }}</span>
             </td>
             <td class="text-center">{{ clube.pontos }}</td>
           </tr>
@@ -57,4 +59,7 @@ export default {
 </script>
 
 <style scoped>
+.bgTable{
+    background-image: linear-gradient(to right, #02c4b0, #0440c2);
+}
 </style>
