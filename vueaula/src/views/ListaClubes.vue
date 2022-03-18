@@ -60,6 +60,6 @@ export default {
 
 <style scoped>
 .bgTable{
-    background-image: linear-gradient(to right, #02c4b0, #0440c2);
+    background-image: linear-gradient(to right, #02c4b0, #12a099c2);
 }
 </style>

@@ -51,7 +51,6 @@
       <router-link to="/login">
         <v-btn>
           <span>Login</span>
-
           <v-icon>mdi-account</v-icon>
         </v-btn>
       </router-link>

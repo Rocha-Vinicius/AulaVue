@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import ListaClubes from '../views/ListaClubes.vue'
 import MeuInicio from '../views/MeuInicio.vue'
 import TelaLogin from '../views/TelaLogin.vue'
+import UsuarioLogado from '../views/UsuarioLogado.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -20,6 +21,11 @@ const routes = [
     path: '/login',
     name: 'TelaLogin',
     component: TelaLogin
+  },
+  {
+    path: '/usuariologado',
+    name: 'UsuarioLogado',
+    component: UsuarioLogado
   },
 
 ]

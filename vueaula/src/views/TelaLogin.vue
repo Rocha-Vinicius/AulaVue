@@ -2,7 +2,7 @@
      <v-app>
     <div style="width: 80%" class="TelaLogin">
       <div class="TelaLogin-form">
-        <h2>TelaLogin</h2>
+        <h2>Login</h2>
       </div>
 
       <v-form class="TelaLogin-box">
@@ -20,15 +20,15 @@
       <div class="botoes">
         <v-btn
           @click="logar"
-          color="green"
+          color="teal lighten-1"
           elevation="2"
           medium
           outlined
           rounded
-          >TelaLogin</v-btn
+          >Login</v-btn
         >
         <router-link to="/registro">
-          <v-btn color="green" elevation="2" medium outlined rounded
+          <v-btn color="teal lighten-1" elevation="2" medium outlined rounded
             >Cadastrar-se</v-btn
           >
         </router-link>
@@ -59,7 +59,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .TelaLogin {
   text-align: center;
   margin: 0 auto;
