@@ -54,6 +54,14 @@
           <v-icon>mdi-account</v-icon>
         </v-btn>
       </router-link>
+
+     <!-- <router-link to="/cadastrousuario">
+        <v-btn>
+          <span>Cadastro</span>
+          <v-icon>mdi-account</v-icon>
+        </v-btn>
+      </router-link> -->
+
     </v-bottom-navigation>
   </div>
 </template>

@@ -2,7 +2,7 @@
      <v-app>
     <div style="width: 80%" class="TelaLogin">
       <div class="TelaLogin-form">
-        <h2>Login</h2>
+        <h2 class="text-h5 text-center mb-3 mt-5">Login</h2>
       </div>
 
       <v-form class="TelaLogin-box">
@@ -19,7 +19,7 @@
 
       <div class="botoes">
         <v-btn
-          @click="logar"
+          @click="nologin"
           color="teal lighten-1"
           elevation="2"
           medium
@@ -27,8 +27,8 @@
           rounded
           >Login</v-btn
         >
-        <router-link to="/registro">
-          <v-btn color="teal lighten-1" elevation="2" medium outlined rounded
+        <router-link to="/cadastrousuario">
+          <v-btn @click="routerlink" color="teal lighten-1" elevation="2" medium outlined rounded
             >Cadastrar-se</v-btn
           >
         </router-link>
@@ -42,21 +42,15 @@ export default {
   name: "TelaLogin",
   data() {
     return {
-      TelaLogin_id: "",
-      TelaLogin_pass: "",
     };
   },
   methods: {
-    logar() {
-      let user = {
-        nome: this.TelaLogin_id,
-        id: this.TelaLogin_pass,
-      };
-      this.$store.commit("logar", user);
-      this.$router.push({ name: "Usuario" });
-    },
-  },
-};
+    nologin: function () {
+    
+      alert('Você não tem login conosco, clique em CADASTRAR-SE')
+    }
+  }
+}
 </script>
 
 <style scoped>
